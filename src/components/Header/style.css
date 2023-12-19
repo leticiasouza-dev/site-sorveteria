@@ -1,0 +1,64 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 15vh; */
+
+    background-color: #f9db79;
+}
+
+header img{
+    width: 7vw;
+}
+
+nav{
+    width: 40%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+
+/* estilização responsiva do meu componente */
+@media screen and (max-width: 500px){
+    header{
+        flex-direction: column;
+        height: 10rem;
+    }
+
+    header img{
+        width: 25vw;
+        
+    }
+
+    hr{
+        width: 90%;
+    }
+
+    nav{
+        width: 100%;
+    }
+}
+
+@media screen  and (min-width: 501px) and (max-width: 768px){
+   header{
+    justify-content: space-between;
+   }
+
+   header img{
+    margin-left: 2rem;
+   }
+   
+    hr{
+        display: none;
+   }
+}
+
+@media screen and (min-width: 769px){
+    hr{
+        display: none;
+    }
+}
