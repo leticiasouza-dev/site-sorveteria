@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
 /* estilização da sessao banner */
 .sessaoBanner{
     background-color: #f9db79;
     background-image: url(/public/assets/banner-home.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover 1;
+    background-size:  contain;
 
     height: 85vh;
 
@@ -31,20 +33,54 @@ main section img{
     width: 50%;
 }
 
-@media screen and (max-width: 500px){
+main h3{
+    font-size: 2rem;
+}
+
+main h3, span{
+    text-transform: uppercase;
+}
+
+main span{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+section article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section p{
+    width: 50%;
+}
+
+
+
+@media screen and (max-width: 768px){  /*para celular e tablet*/
+    .sessaoBanner{
+        text-align: center;
+    }
+    
     .sessao-nossos_sabores,
     .sessaoSorvetes,
     .sessaoSobre{
         flex-direction: column;
     }
-    
+
+    .sessaoSorvetes{
+        flex-direction: column-reverse;
+    }
+
     main section img{
         width: 100%;
     }
 
-}
-
-
-@media screen  and (min-width: 501px) and (max-width: 768px){
+    main article{
+        padding: 4rem 0;
+    }
 
 }
