@@ -1,9 +1,12 @@
 import React from "react";
-
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import './style.css'
 
 function PaginaHome (){
     return(
+        <>
+        <Header />
         <main>
             <section className="sessaoBanner">
                 <h1>Sorvete Artesanal</h1>
@@ -53,7 +56,8 @@ function PaginaHome (){
             </section>
         </main>
         
-
+        <Footer />
+        </>
 
     )
 }

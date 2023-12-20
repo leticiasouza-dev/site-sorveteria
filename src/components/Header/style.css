@@ -19,6 +19,12 @@ nav ul{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
+
+}
+
+nav ul li > a{
+    color: black;
+    text-decoration: none;
 }
 
 
