@@ -1,0 +1,50 @@
+/* estilização da sessao banner */
+.sessaoBanner{
+    background-color: #f9db79;
+    background-image: url(/public/assets/banner-home.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover 1;
+
+    height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 3rem;
+
+    text-shadow: 2px 2px 2px  black;
+}
+
+/* estilização da sessão de informações */
+.sessao-nossos_sabores,
+.sessaoSorvetes,
+.sessaoSobre{
+    display: flex;
+}
+
+main section img{
+    width: 50%;
+}
+
+@media screen and (max-width: 500px){
+    .sessao-nossos_sabores,
+    .sessaoSorvetes,
+    .sessaoSobre{
+        flex-direction: column;
+    }
+    
+    main section img{
+        width: 100%;
+    }
+
+}
+
+
+@media screen  and (min-width: 501px) and (max-width: 768px){
+
+}
