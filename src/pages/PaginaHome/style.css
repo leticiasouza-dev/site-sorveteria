@@ -8,11 +8,12 @@
     background-position: center center;
     background-size:  contain;
 
-    height: 85vh;
+    height: 90vh;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5rem;
 }
 
 h1{
@@ -63,6 +64,7 @@ section p{
 @media screen and (max-width: 768px){  /*para celular e tablet*/
     .sessaoBanner{
         text-align: center;
+        margin-top: 7rem;
     }
     
     .sessao-nossos_sabores,
