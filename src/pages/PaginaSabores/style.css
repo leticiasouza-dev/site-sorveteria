@@ -1,0 +1,61 @@
+.sessaoBannerSabores{
+    background-image: url(/public/assets/banner-sabores.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessaoSaboresSorvete{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    padding: 5rem 0 8rem 0;
+
+    gap: 2rem;
+}
+
+.sessaoSaboresSorvete h1{
+    margin:  0 auto;
+}
+
+.sessaoSaboresSorvete img{
+    width: 10rem;
+}
+
+.sessaoSaboresSorvete section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* gap: 2rem;  responsivo*/
+}
+
+.sessaoSaboresSorvete section h3{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sessaoSaboresSorvete article{
+    width: 20rem;
+    height: 70vh;
+
+    border: 2px solid white;
+    box-shadow: 0px -1px 13px 7px #e8eaec;
+}
+
+@media screen and (max-width: 768px){ /*para celular e tablet*/
+    .sessaoSaboresSorvete section{
+        flex-direction: column;
+    }
+
+    .sessaoSaboresSorvete article{
+        height: 45vh;
+    }
+}
