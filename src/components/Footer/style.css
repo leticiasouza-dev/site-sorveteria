@@ -23,7 +23,7 @@ footer img{
     padding: 2rem 0 3rem 0;
 
     flex-wrap: wrap;
-    gap: 3rem
+    gap: 3rem;
 }
 
 footer div:last-child{
